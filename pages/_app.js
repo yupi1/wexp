@@ -4,7 +4,7 @@ import '../styles/global.css';
 export default function MyApp({ Component, pageProps }) {
   return (
     <>          
-      <title>Wood export ukraine</title>
+      <title>Wood export from UA</title>
       <Component {...pageProps} />
     </>
   )

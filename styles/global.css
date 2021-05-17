@@ -29,6 +29,40 @@ html {
 }
 
 body {
-  background-color: hsl(41, 31%, 88%);
-  color: #000;
+  background-color: white;
+  color: #333;
+  font-size: 14px;
+  text-align: center;
 }
+
+.container {
+  height: 1800px;
+}
+
+/* --------------------- MENU------------------- */
+.navigation-menu {
+  position: fixed;
+  top: 25px;
+  left: 25px;
+  z-index: 10;
+  display: block;
+}
+
+.nav-list {
+  list-style: none;
+  text-align: left;
+}
+
+.nav-item {
+  padding: 15px;
+}
+
+.nav-item .nav-link {
+  letter-spacing: 3px;
+  font-weight: 500;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: black;
+  text-decoration: none;
+}
+
