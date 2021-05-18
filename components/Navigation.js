@@ -1,10 +1,14 @@
+import styles from './../styles/Navigation.module.css';
+
+console.log(styles);
+
 export default function Navigation() {
   return (
-    <nav className="navigation-menu">
-      <ul className="nav-list">
-        <li className="nav-item"><a className="nav-link" href="">About</a></li>
-        <li className="nav-item"><a className="nav-link" href="">Services</a></li>
-        <li className="nav-item"><a className="nav-link" href="">Contact</a></li>
+    <nav className={styles.navigation_menu}>
+      <ul className={styles.nav_list}>
+        <li className={styles.nav_item}><a className={styles.nav_link} href="">About</a></li>
+        <li className={styles.nav_item}><a className={styles.nav_link} href="">Services</a></li>
+        <li className={styles.nav_item}><a className={styles.nav_link} href="">Contact</a></li>
       </ul>
     </nav>
   )
