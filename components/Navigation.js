@@ -1,7 +1,5 @@
 import styles from './../styles/Navigation.module.css';
 
-console.log(styles);
-
 export default function Navigation() {
   return (
     <nav className={styles.navigation_menu}>
