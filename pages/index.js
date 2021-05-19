@@ -1,9 +1,21 @@
-import Head from 'next/head'
+import Navigation from "./../components/Navigation.js";
+import About from "./../components/About.js"
 
 export default function HomePage() {
   return (
     <div className="container">
-      <h1 className="red">Wood Export from Ukraine</h1>
+      <header>
+        <Navigation />
+        <span style={{visibility: "hidden"}}>DT</span>
+      </header>
+
+      <main>
+        <About />
+
+        <section className="Services"></section>
+      </main>
+
+      <footer className="contact"></footer>
     </div>
   )
 }

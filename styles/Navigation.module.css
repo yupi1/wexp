@@ -1,0 +1,46 @@
+.navigation_menu {
+  position: fixed;
+  top: 25px;
+  left: 45px;
+  z-index: 10;
+  display: block;
+}
+
+.nav_list {
+  list-style: none;
+  text-align: center;
+}
+
+.nav_item {
+  padding: var(--menu-item-padding);
+  padding-left: 0;
+  position: relative;
+  width: fit-content;
+  overflow: hidden;
+}
+
+.nav_item .nav_link:before {
+  position: absolute;
+  content: '';
+  display: block;
+  background-color: var(--primary);
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+
+.nav_list .nav_item:hover > .nav_link:before {
+  transform: translateX(0%);
+}
+
+.nav_item .nav_link {
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: black;
+  text-decoration: none;
+}
+
