@@ -2,6 +2,7 @@
   --menu-item-padding: 15px;
   /* Color */
   --primary: hsla(110, 100%, 34%, 1);
+  --wt: hsla(0, 100%, 100%, 1);
   /* Text */
   --font-primery: sans-serif;
   --font-secondary: serif;
@@ -37,7 +38,7 @@
 }
 
 body {
-  background-color: white;
+  background-color: var(--wt);
   font-family: "Lato", var(--font-primery);
   font-size: var(--text-base-size);
   color: #333;
@@ -45,5 +46,5 @@ body {
 }
 
 .container {
-  height: 1800px;
+  overflow: hidden;
 }

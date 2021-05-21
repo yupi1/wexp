@@ -1,0 +1,25 @@
+.about_section {
+  display: block;
+  position: relative;
+  color: var(--wt);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text_wrapper {
+  z-index: 1;
+}
+
+.hero_title {
+  text-transform: uppercase;
+  opacity: 0.8;
+  font-size: calc(1em * (var(--text-scale-ratio) * 3));
+}
+
+.hero_text {
+  opacity: 0.8;
+  font-size: calc(1em * var(--text-scale-ratio));
+}

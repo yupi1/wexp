@@ -1,4 +1,4 @@
-import Logo from "../public/dia_trade.svg";
+import Logo from "../public/dia.svg";
 
 import styles from './../styles/Header.module.css';
 
@@ -7,7 +7,7 @@ export default function Header() {
     <header className={styles.header_container}>
       <nav className={styles.navigation_menu}>
         <a href="#">
-          <Logo className="logo" />
+          <Logo className={styles.logo} />
         </a>
 
         <ul className={styles.nav_list}>
