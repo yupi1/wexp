@@ -23,6 +23,5 @@
 .hero_text {
   line-height: 1.4;
   margin-top: 20px;
-  opacity: 0.8;
   font-size: var(--text-lg);
 }

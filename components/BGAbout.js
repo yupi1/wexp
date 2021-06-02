@@ -7,7 +7,7 @@ export default function BGImage() {
       alt="Timber export company from UA"
       layout="fill"
       objectFit="cover"
-      quality={50}
+      quality={80}
     />
   )
 } 

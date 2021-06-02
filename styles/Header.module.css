@@ -4,6 +4,7 @@
   z-index: 3;
   top: 0;
   left: 0;
+  transition: background-color 0.3s ease;
 }
 
 .navigation_menu {
@@ -11,11 +12,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px;
+  padding: 30px 30px;
+  transition: padding 0.3s ease;
 }
 
 .logo {
   fill: white;
+  transition: background-fill 0.3s ease;
 }
 
 .nav_list {
@@ -35,6 +38,7 @@ a.nav_link {
   text-transform: uppercase;
   text-decoration: none;
   position: relative;
+  transition: color 0.3s ease;
 }
 
 a.nav_link::after {
@@ -45,7 +49,7 @@ a.nav_link::after {
   width: 100%;
   height: 2px;
   bottom: -10px;
-  background-color: var(--primary);
+  background-color: var(--wt);
   transform: scaleX(.001);
   transform-origin: right center;
   transition: transform 0.2s ease-in;
@@ -54,4 +58,26 @@ a.nav_link::after {
 a.nav_link:hover:after {
   transform: scaleX(1);
   transform-origin: left center;
+}
+
+/* ------------------ACTIVE------------------- */
+
+.active {
+  background-color: var(--wt);
+}
+
+.active .navigation_menu {
+  padding: 20px 30px;
+}
+
+.active .logo {
+  fill: var(--dark);
+}
+
+.active a.nav_link {
+  color: var(--dark);
+}
+
+.active a.nav_link::after {
+  background-color: var(--primary);
 }
