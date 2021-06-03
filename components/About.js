@@ -2,9 +2,9 @@ import BGImage from "./BGAbout";
 
 import styles from '../styles/About.module.css'
 
-export default function About() {
+export default function About({ forwardedRef }) {
   return (
-    <section className={styles.about_section}>
+    <section className={styles.about_section} ref={forwardedRef}>
       <BGImage />
       <div className={styles.text_wrapper}>
         <h1 className={styles.hero_title}>We are exporter</h1>
