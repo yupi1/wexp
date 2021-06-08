@@ -11,17 +11,21 @@
 
 .text_wrapper {
   z-index: 1;
-  max-width: 50vw;
 }
 
 .hero_title {
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #ffffff;
+  letter-spacing: -2px;
   text-transform: uppercase;
-  opacity: 0.8;
   font-size: calc(1em * (var(--text-scale-ratio) * 3));
 }
 
 .hero_text {
+  opacity: 0.8;
   line-height: 1.4;
   margin-top: 20px;
-  font-size: var(--text-lg);
+  /* font-size: var(--text-xl); */
+  font-size: clamp(16px, 2.5vw, 48px);
 }

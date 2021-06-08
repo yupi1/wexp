@@ -59,7 +59,7 @@ body {
   font-size: var(--text-base-size);
   color: #333;
   text-align: center;
-  user-select: none;
+  /* user-select: none; */
 }
 
 .container {

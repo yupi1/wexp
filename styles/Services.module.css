@@ -1,3 +1,34 @@
-.services {
-  height: 100vh;
+.services_container {
+  padding: 50px 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.services_header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: auto;
+}
+
+.services_header > * {
+  flex-basis: 50%;
+}
+
+.services_header h2 {
+  font-weight: 700;
+  line-height: 44px;
+  padding-right: 44px;
+  font-size: clamp(12px, 1.72vw, 34px);
+}
+
+.img_lumber {
+  max-width: 400px;
+}
+
+.text_gradient {
+  background: radial-gradient(circle, rgba(31,172,45,0.6026785714285714) 0%, rgba(16,209,142,0.6615021008403361) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
