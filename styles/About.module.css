@@ -17,7 +17,6 @@
   color: transparent;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #ffffff;
-  letter-spacing: -2px;
   text-transform: uppercase;
   font-size: calc(1em * (var(--text-scale-ratio) * 3));
 }

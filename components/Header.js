@@ -4,7 +4,7 @@ import Logo from "../public/dia.svg";
 
 import styles from './../styles/Header.module.css';
 
-export default function Header({ servicesRef, aboutRef }) {
+export default function Header({ servicesRef, aboutRef, footerRef }) {
   const headerEl = useRef(null);
   const [active, setActive] = useState(false);
 
@@ -41,7 +41,7 @@ export default function Header({ servicesRef, aboutRef }) {
           <li className={styles.nav_item}>
             <a onClick={event => navigateTo(event, servicesRef)} className={styles.nav_link} href="">Services</a>
           </li>
-          <li className={styles.nav_item}>
+          <li onClick={event => navigateTo(event, footerRef)} className={styles.nav_item}>
             <a className={styles.nav_link} href="">Contact</a>
           </li>
         </ul>
