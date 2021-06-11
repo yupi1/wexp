@@ -9,18 +9,19 @@
   padding: 15px 0;
   letter-spacing: 5px;
   font-size: clamp(24px, 2.2vw, 32px);
-  font-weight: 700;
+  font-weight: 800;
 }
-
+/* 
 .services_container > div {
   margin: 25px 0;
-}
+} */
 
 .services_header {
+  height: 90vh;
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin: auto;
+  padding: 20px 0;
 }
 
 .services_header > * {
@@ -57,10 +58,11 @@
 }
 
 .section_production {
+  height: 90vh;
   display: flex;
   align-content: center;
   flex-direction: column;
-  padding: 50px 0;
+  padding: 10vh 0;
 }
 
 .image_container {
@@ -83,15 +85,16 @@
 }
 
 .section_devilery {
+  height: 90vh;
   display: flex;
   flex-direction: column;
-  padding: 50px 0;
-  height: 80vh;
   justify-content: space-around;
+  padding: 10vh 0;
 }
 
 .list_item {
   text-align: left;
+  list-style: none;
 }
 
 .item {

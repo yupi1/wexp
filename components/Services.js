@@ -44,9 +44,9 @@ export default function Services({ forwardedRef }) {
 
           <div className={styles.wrapper}>
             <ul className={styles.list_item}>
-              <li className={styles.item}><p>Pre-packaging timber treatment</p></li>
-              <li className={styles.item}><p>Careful packaging</p></li>
-              <li className={styles.item}><p>Delivery (by ship/vehicle)</p></li>
+              <li className={styles.item}>Pre-packaging timber treatment</li>
+              <li className={styles.item}>Careful packaging</li>
+              <li className={styles.item}>Delivery (by ship/vehicle)</li>
             </ul>
 
             <Image
