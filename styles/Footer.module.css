@@ -7,9 +7,20 @@
 }
 
 .footer_menu_wrap {
-  display: flex;
   margin: 0 auto;
+  display: flex;
   justify-content: center;
+  flex-direction: column;
+}
+
+.footer_menu_wrap h3 {
+  letter-spacing: 1.25px;
+}
+
+.contacts_wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }
 
 .menu_item {
