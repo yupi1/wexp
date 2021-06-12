@@ -8,10 +8,10 @@ export default function Services({ forwardedRef }) {
   return (
     <section className={styles.services} ref={forwardedRef}>
       <div className={styles.services_container}>
-        <div className={styles.services_header}>
+        {/* <div className={styles.services_header}>
           <h2><span className={styles.text_gradient}>Softwood</span> and <span className={styles.text_gradient}>hardwood</span> timber for carpentry, <br />  building and construction industry.</h2>
           <Lumber className={styles.img_lumber} />
-        </div>
+        </div> */}
 
         <div className={styles.section_production}>
           <h3>Production Capacity</h3>
@@ -63,6 +63,12 @@ export default function Services({ forwardedRef }) {
             />
           </div>
         </div>
+
+        <blockquote className={styles.quote_wrap}>
+          <p className={styles.quote}>When you need to innovate, you need <span className={styles.highlight}>collaboration</span>.</p>
+          <cite className={styles.author}>&ndash; Marissa Mayer</cite>
+        </blockquote>
+
       </div>
     </section >
   )

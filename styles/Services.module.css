@@ -11,10 +11,6 @@
   font-size: clamp(24px, 2.2vw, 32px);
   font-weight: 800;
 }
-/* 
-.services_container > div {
-  margin: 25px 0;
-} */
 
 .services_header {
   height: 90vh;
@@ -99,4 +95,41 @@
 
 .item {
   padding: 10px 0;
+}
+
+/* NEWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW */
+.quote_wrap {
+  font-family: Lato, serif;
+  width: 44vw;
+  margin: 4.5em auto;
+  border-bottom: 2.2px dotted black;
+  padding-bottom: 1em;
+  font-size: 1.6em;
+}
+
+.quote {
+  position: relative;
+  letter-spacing: 0.1em;
+  margin-bottom: 10px;
+}
+
+.quote:before {
+  content: "“";
+}
+
+.quote:after {
+  content: "“";
+}
+
+.highlight {
+  background: radial-gradient(circle, rgba(15,226,36,0.7455357142857143) 5%, rgba(20,203,139,0.8071603641456583) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.author {
+  display: block;
+  text-align: right;
+  font-weight: 300;
 }
