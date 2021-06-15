@@ -1,16 +1,16 @@
 .services_container {
-  padding: 50px 100px;
+  padding: 20px 80px;
   display: flex;
   flex-direction: column;
 }
 
-.services_container h3 {
+/* .services_container h3 {
   text-transform: uppercase;
   padding: 15px 0;
   letter-spacing: 5px;
   font-size: clamp(24px, 2.2vw, 32px);
   font-weight: 800;
-}
+} */
 
 .services_header {
   height: 90vh;
@@ -98,10 +98,29 @@
 }
 
 /* NEWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW */
+
+.services_item {
+  display: grid;
+  column-gap: 25px;
+  padding: 5em 0;
+  align-items: center;
+  grid-template-columns: auto auto;
+}
+
+.services_item:nth-child(even) h3 {
+  order: 1;
+}
+
+.services_item h3 {
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
 .quote_wrap {
   font-family: Lato, serif;
   width: 44vw;
-  margin: 4.5em auto;
+  margin: 6em auto;
   border-bottom: 2.2px dotted black;
   padding-bottom: 1em;
   font-size: 1.6em;
