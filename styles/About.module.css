@@ -24,7 +24,44 @@
 .hero_text {
   opacity: 0.8;
   line-height: 1.4;
-  margin-top: 20px;
-  /* font-size: var(--text-xl); */
+  margin-top: 30px;
   font-size: clamp(16px, 2.5vw, 48px);
+}
+
+.txt_container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.txt_rotate {
+  width: 100%;
+  display: inline-block;
+  position: relative;
+  transform-style: preserve-3d;
+  perspective: 1200px;
+  white-space: nowrap;
+}
+
+.keyword {
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  position: absolute;
+  top: -40px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+}
+
+.keyword[data-position="middle"] {
+  opacity: 1;
+  transform: translateY(0%) rotateX(-1deg); 
+}
+
+.keyword[data-position="top"] {
+  transform: translateY(-65%) rotateX(95deg);
+}
+
+.keyword[data-position="bottom"] {
+  transform: translateY(120%) rotateX(-95deg);
 }

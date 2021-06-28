@@ -19,7 +19,7 @@ export default function Services({ forwardedRef }) {
     <section className={styles.services} ref={forwardedRef}>
       <div className={styles.services_container}>
 
-        <div className={styles.services_item} data-index="1">
+        <div className={styles.services_item}>
           <h3>Production and export of Ukrainian sawn timber</h3>
           <Image
             src='/timber_3.jpg'
@@ -32,6 +32,7 @@ export default function Services({ forwardedRef }) {
         <div className={styles.services_item}>
           <h3>Reasonable market prices</h3>
           <Image
+            style={{ clipPath: "inset(0 0 53% 0)" }}
             src='/timber_2.jpg'
             alt="Reasonable market prices"
             width={400}
